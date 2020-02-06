@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "a b"
+                         "f c"
+                         "e d";
+    max-width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 800px);
+    grid-gap: 8px;
+}
+
+.box {
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-family: 'Revalia', cursive;
+    font-size: 50px;
+    padding: 2%;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.98);
+    color: white;
+    position: fixed;
+    top: 0;
+}
+
+.container {
+    margin-top: 195px;
+    margin-bottom: 40px;
+}
+
+footer {
+    font-family: 'Revalia', cursive;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    margin: 10px auto;
+    padding-right: 2%;
+    position: fixed;
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.98);
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.A {
+    grid-area: a;
+    margin: 1% auto;
+}
+
+.B {
+    grid-area: b;
+    margin: 1% auto;
+}
+
+.C {
+    grid-area: c;
+    margin: 10% auto;
+}
+
+.D {
+    grid-area: d;
+    margin: 1% auto;
+}
+
+.E {
+    grid-area: e;
+    margin: 1% auto;
+}
+
+.F {
+    grid-area: f;
+    margin: 25% auto;
+}
+
+/* @media */

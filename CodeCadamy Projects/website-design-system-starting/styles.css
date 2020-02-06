@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 4%;
+    text-align: center;
+    font-family: 'McLaren', cursive;
+    font-size: 72px;
+    background-image: url("resources/Design1400x663.png");
+    color: rgba(0, 0, 0, 0.9);
+}
+
+h2, .colors p, li {
+    font-family: 'Lato', sans-serif; 
+}
+
+h2, a {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-family: 'McLaren', cursive;
+    font-size: 20px;
+}
+
+p, li {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+section {
+    border: 3px solid rgba(47, 79, 79, 1);
+    width: 80%;
+    height: 100%;
+    margin: 4% auto;
+    padding: 1%;
+    background-color: rgba(242, 242, 242, 0.6);
+}
+
+h2 {
+    padding-left: 1%;
+}
+
+.colors, .styles, .fonts{
+    margin: 4% auto;
+    padding: 2%;
+}
+
+ul {
+    margin: 1% 2%;
+}
+
+.color-palet, .font, .style {
+    display: inline-block;   
+}
+
+.color-palet {
+    border: 2px solid rgba(47, 79, 79, 0.7);
+    border-radius: 1%;
+    width: 25%;
+    margin: 2% 4%;
+    padding: 2%;
+    text-align: center;
+}
+
+.font, .style {
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.colors .alice-blue {
+    background-color: aliceblue;
+}
+
+.colors .beige {
+    background-color: beige;
+}
+
+.colors .chartreuse {
+    background-color: chartreuse;
+}
+
+.colors .deep-pink {
+    background-color: deeppink;
+}
+
+.colors .fire-brick {
+    background-color: firebrick;
+}
+
+.colors .gold {
+    background-color: gold;
+}
+
+.font h3, .style h3 {
+    text-decoration: underline;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.lato-400 {
+    font-weight: 400;
+}
+
+.lato-700 {
+    font-weight: 700;
+}
+
+.lato-900 {
+    font-weight: 900;
+}
+
+.mclaren {
+    font-family: 'McLaren', cursive;
+}
+
+.mclaren-400 {
+    font-weight: 400;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.oswald-400 {
+    font-weight: 400;
+}
+
+.oswald-500 {
+    font-weight: 500;
+}
+
+.oswald-700 {
+    font-weight: 700;
+}

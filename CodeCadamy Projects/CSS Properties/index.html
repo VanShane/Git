@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="./resources/index.css" type="text/css" rel="stylesheet">
+    <title>CSS Properties</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Properties You Must Know</h1>
+    </header>
+    <main>
+        <ol>
+            <li><h2>Display</h2></li>
+            <section class="display">
+                <p class="description">Display takes on many different values, but only 4 are most commonly used.</p>
+                <div class="example">
+                    <p>
+                        div {
+                        <div class="example-container">
+                            display: block;
+                            <br>
+                            display: inline-block;
+                            <br>
+                            display: inline;
+                            <br>
+                            display: none;
+                            <br>
+                        </div>
+                        }
+                    </p>
+                </div>
+                <div class="unordered-list">
+                    <ul>
+                        <li>
+                            <p><span>block:</span> Many HTML elements are set to this mode of display by browser's stylesheets. They include &lt;div&gt;, &lt;ul&gt; and text blocks like &lt;p&gt;. Block level elements by defautl take up as much space as they can, and they cannot be placed on the same horizontal line with any other display modes, include other block elements. (Exception: unless they are floated)</p>                            
+                            <p>With block elements, you gain the ability to alter the element's width and height to your liking, which is why they are <a href="https://zellwk.com/blog/layouts-of-a-website/" target="_blank">used for layouts</a>.</p>
+                        </li>
+                        <li>
+                            <p><span>inline:</span> The inline mode wraps many HTML elements tighty around them and is the defaults for all elements that are not specified with any other display values. Elements can be placed side by side on the same line as inline elements. Think about the &lt;strong&gt; tag that <strong>bolds elements</strong>, the &lt;em&gt; tag that creates <em>italics</em> and &lt;a&gt; tags that allow you to link to other web pages. These are all examples of inline elements. You will not be able to change an inline element's widht and height.</p>
+                        </li>
+                        <li>
+                            <p><span>inline-block:</span> This is one display value that combines the properties of both block elements and inline elements. You get the ability to set a height and width, and the element can appear on the same horizontal line as other elements.</p>
+                        </li>
+                        <li>
+                            <p><span>none:</span> Display none hides the element form the website and it will not be shown visually. This very useful for CSS Dropdown menus where additional options appear when you hover on nvavigation menus. The rationale is that elements are set to a display value of none initially, and the display value is changed to block on hover.</p>
+                        </li>
+                    </ul>
+                </div>
+                <figure class="display-figure">
+                    <img src="resources/img/display-values.jpg" alt="display values">
+                </figure>
+                <aside>
+                    <p>Other display values can be found on the <a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">W3 Schools website</a></p>
+                </aside>
+            </section>
+            <li><h2>Width and Height</h2></li>
+            <section class="width-height">
+                <p class="description">Width and height properties are used closely with display:block and display:inline to set the width and height of HTML elements while creating a website. Common units for Width and Height are:</p>
+                <ul class="units">
+                    <li><strong>px</strong> - Pixels</li>
+                    <li><strong>em</strong> - A unit of measurement, where 1 em = current font size</li>
+                    <li><strong>rem</strong> - Root em. Same measurement as em, but makes life much easier without the inheritance problem.</li>
+                    <li><strong>%</strong> - Percentages.</li>
+                    <li><strong>auto</strong> - highly useful unit.</li>
+                </ul>
+                <aside>
+                    <p>Other units of measurement can be found at the <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">W3 Schools website</a>. If you're wondering about the difference between px, em and rem, check out this great article on <a href="https://snook.ca/archives/html_and_css/font-size-with-rem" target="_blank">font sizing with rem by <em>Jonathan Snook</em></a>.</p>
+                </aside>
+                <p>Extremly useful properties like max-width, min-width, max-height and min-height come into play as well when you're making responsive websites. Here's one example of how auto and max-width can be used to make sure images fit tightly and snugly into available space:</p>
+                <div class="example">
+                    <p>
+                        img {
+                        <div class="example-container">
+                            max-width: 100%;
+                            <br>
+                            height: auto;
+                            <br>
+                        </div>
+                        }
+                    </p>
+                </div>
+            </section>
+            <li><h2>Margin and Padding</h2></li>
+            <section class="margin-padding">
+                <p>Margins and paddings dictate the spaces between elements on your website. They are very similar and have the same units as Width and Height mentioned above.</p>
+                <p>The only difference between margins and paddings is the area they exert control over. Margins affect the area outside of borders whereas paddings affect areas inside the border. It is useful to refer to the box model below:</p>
+                <figure class="box-model-figure">
+                    <img src="resources/img/box-model.jpg" alt="box-model">
+                </figure>
+                <p>Ordinarily, margins are written in this manner:</p>
+                <div class="example">
+                    <p>
+                        div{
+                            <div class="example-container">
+                                margin-top: 20px;
+                                <br>
+                                margin-bottom: 20px;
+                                <br>
+                                margin-right: 10px;
+                                <br>
+                                margin-left: 10px;
+                                <br>
+                            </div>
+                        }
+                    </p>
+                </div>
+                <p>They can be written in shorthand to simplify the lines of code and make it easier to read. In fact, shorthands are the standard practice and you should know them. Here's a quick explanation:</p>
+                <div class="example">
+                    <p>
+                        div{
+                            <div class="example-container">
+                                margin: 20px 10px 20px 10px;
+                                <br>
+                                /* This shorthand refers to top, right, bottom, left; in a clock-wise rotation. */
+                                <br>
+                                margin: 20px 10px 20px;
+                                <br>
+                                /* This refers to top, left and right, bottom. */
+                                <br>
+                                margin: 20px 10px;
+                                <br>
+                                /* This refers to top and bottom, left and right. */
+                                <br>
+                                margin: 20px;
+                                <br>
+                                /* This refers to 20px worth of margin on all 4 sides. */
+                                <br>
+                            </div>
+                        }
+                    </p>
+                </div>
+                <aside>
+                    <p><strong>Extra Tip:</strong> margins with auto on the left and right are used to center an element with a display value of block. It's written simply as:</p>
+                    <div class="example">
+                        <p>
+                            div{
+                                <div class="example-container">
+                                    margin: 0 auto;
+                                    <br>
+                                </div>
+                            }
+                        </p>
+                    </div>
+                </aside>
+            </section>
+            <li><h2>Border:</h2></li>
+            <section class="border">
+                <p>Borders are... borders. I'm pretty sure you don't need an explanation of what borders are.</p>
+                <p>Borders have 3 different properties that you have to take care of:</p>
+                <ul>
+                    <li><p><strong>border-width</strong> - width of the border. Same units as width and height.</p></li>
+                    <li><p><strong>border-style</strong> - style of the border. Usual values are solid and dashed. For a complete list, take a look at <a href="https://www.w3schools.com/cssref/pr_border-style.asp" target="_blank">W3 Schools Website</a>.</p></li>
+                    <li><p><strong>border-color</strong> - color of the border. Hex and rgb values can be used.</p></li>
+                </ul>
+                <aside>
+                    <p>Instead of writing the longer version, you could declare the border shorthand this way:</p>
+                    <div class="example">
+                        <p>
+                            div{
+                                <div class="example-container">
+                                    border: 1px solid black;
+                                    <br>
+                                    /* border width, style and color. */
+                                    <br>
+                                </div>
+                            }
+                        </p>
+                    </div>
+                    <p>Likewise to margins and paddings, borders refer to all 4 sides. If you are only interested in applying borders to 1 or 2 sides, I generally prefer to stick by border-top, border-bottom, border-left or border-right.</p>
+                </aside>
+            </section>
+        </ol>
+    </main>
+</body>
+</html>

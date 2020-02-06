@@ -1,0 +1,61 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    min-width: fit-content;
+    max-width: fit-content;
+    min-height: fit-content;
+    max-height: fit-content;
+}
+
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+h1 {
+    background-image: url("./images/pattern.jpeg");
+    background-position: fit-content;
+    font-size: 6.25rem;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    margin: 4% auto;
+}
+
+.main {
+    overflow: scroll;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 2% auto; 
+}
+
+.brush {
+    background-color: mediumspringgreen;
+}
+
+.frame {
+    background-color: lightcoral;
+}
+
+.paint {
+    background-color: skyblue;
+}
+
+h3 {
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin: 2% auto;
+}
+
+p {
+    margin: 2% auto;
+}
+
+span {
+    font-weight: bold;
+    color: blue;
+}
