@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* section 1 */
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    max-width: 50%;
+    margin: 4% auto;
+    grid-template-areas: "A B"
+                         "C D"
+                         "E F";
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 10px;
+}
+
+.box {
+    padding: 2%;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.a {
+    grid-area: "A";
+    background-color: yellowgreen;
+}
+
+
+.b {
+    grid-area: "B";
+    background-color: yellow;
+    justify-items: center;
+}
+
+.c {
+    grid-area: "C";
+    background-color: lightblue;
+    justify-items: end;
+}
+
+.d {
+    grid-area: "D";
+    background-color: lightcyan;
+}
+
+.e {
+    grid-area: "E";
+    background-color: crimson;
+}
+
+.f {
+    grid-area: "F";
+    background-color: orangered;
+}
+
+/* section 2 */
+
+.container {
+    display: grid;
+    width: 50%;
+    border: 2px solid cadetblue;
+    margin: 5% auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.test {
+    border: 2px dotted gold;
+    width: 25%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.A {
+    border: 2px double red;
+}
+
+.B {
+    border: 2px double blue;
+}
+
+.C {
+    border: 2px double navajowhite;
+}
+
+.D {
+    border: 2px double deeppink;
+}
